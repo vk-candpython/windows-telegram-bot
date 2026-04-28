@@ -249,20 +249,6 @@ C:\ProgramData\MyBot\               # PATH (hidden)
 
 ## 🔐 Security & Encryption
 
-### Encryption Algorithm
-
-```python
-def encrypt(data):
-    k0, k1 = KEY  # Generated from SEED (1-8, 1-256)
-    f = 0
-    
-    for i, c in enumerate(data):
-        n = ord(c)
-        x = (n << k0) ^ (((k1 + f) + i) & 0xFF)
-        f = (f ^ x) & 0xFF
-        yield chr(x)
-```
-
 **Properties:**
 - XOR-based stream cipher with feedback
 - Each encrypted byte depends on position, key, and previous state
