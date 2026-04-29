@@ -1,0 +1,15 @@
+pyTelegramBotAPI
+pywin32
+psutil
+mouse
+keyboard
+sounddevice
+opencv-python
+mss
+chardet
+playsound==1.2.2
+winotify
+tabulate
+requests
+pywifi
+pypykatz
