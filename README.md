@@ -7,7 +7,7 @@
 [![Language](https://img.shields.io/badge/language-Python%203-3776AB?logo=python)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Commands](https://img.shields.io/badge/commands-73-brightgreen)]()
-[![Lines](https://img.shields.io/badge/lines-6,848-orange)]()
+[![Lines](https://img.shields.io/badge/lines-6,851-orange)]()
 
 *Advanced Telegram-based Remote Administration Tool for Windows*
 
