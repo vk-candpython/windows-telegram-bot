@@ -251,21 +251,6 @@ Both monitored and restored every 3 seconds by `setup()`.
 
 ### Encryption Algorithm
 
-Custom XOR-based stream cipher with feedback mutation:
-
-```python
-def encrypt(data):
-    k0, k1 = KEY  # Generated from SEED
-    f = i = 0     # Feedback and position
-    
-    for c in data:
-        n = ord(c)
-        x = (n << k0) ^ (((k1 + f) + i) & 0xFF)
-        f = (f ^ x) & 0xFF           # Feedback mutation
-        yield chr(x)
-        i += 1
-```
-
 **Properties:**
 - Each encrypted byte depends on: key, position, and previous ciphertext
 - Feedback creates avalanche effect
